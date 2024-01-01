@@ -88,7 +88,7 @@ app.delete("/note/:id", async (req, res) => {
 
 mongoose
   .connect(
-    `mongodb+srv://Samarjeet1:Samar1234@mychat.fyp8sow.mongodb.net/?retryWrites=true&w=majority`
+    `mongodb+srv://${USERNAME}:${PASSWORD}@mychat.fyp8sow.mongodb.net/?retryWrites=true&w=majority`
   )
   .then(() => {
     console.log("connection is made with database");
